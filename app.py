@@ -17,16 +17,16 @@ st.sidebar.link_button('📄 Lien vers le dataset utilisé', 'https://huggingfac
 sentence_identification = st.text_input("Your sentence")
 
 if sentence_identification != "":
-    st.write("Your sentence is: ", sentence_identification )
+    st.write("Your sentence is in: ", '**'+model_prediction(sentence_identification)+'**')
    
 
 if st.checkbox("Do you want to know the translated sentence?"):
     json_file = open('lang_code.json')
     language = json.load(json_file)
-    language_selected = st.selectbox("Choisissez une thématique", language.keys())
+    language_selected = st.selectbox("Choose the output language", language.keys())
     
     if sentence_identification != "" and language_selected != "":
-        st.write("You want to know what does mean: ", sentence_identification , " in", language_selected, "-", language[language_selected])
+        st.write("You want to know what does mean: ", '**'+sentence_identification+'**' , " in",'**'+language_selected+'**')
 
         if st.button('Translate'):
             translated_sentence = translate(sentence_identification, language[language_selected])
