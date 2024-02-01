@@ -1,6 +1,6 @@
 # deeplearning-nlp
 
-A brief description of what this project does and who it's for
+> Projet Deep Learning, NLP, votre application devra contenir une page analytique et une page permettant d’utiliser le ou les modèles entraînés
 
 ## Authors
 
@@ -9,20 +9,11 @@ A brief description of what this project does and who it's for
 - [@killiancolla](https://www.github.com/killiancolla)
 - [@StAntho](https://www.github.com/StAntho)
 
-## Enoncé choisi
-
-> Projet Deep Learning, NLP, votre application devra contenir une page analytique et une page permettant d’utiliser le ou les modèles entraînés
-
-## Technologies utilisé
-
-[![Python](https://www.stat4decision.com/wp-content/uploads/2019/01/python.jpg)](https://www.python.org/)
-[![Streamlit](https://miro.medium.com/v2/resize:fit:2000/1*HCpU9Lsfnm8On56sJplEbw.png)](https://streamlit.io/)
-
 ## Tech Stack
 
-**Client:** Pyhton, Streamlit
+**Client:** [Pyhton](https://www.python.org/), [Streamlit](https://streamlit.io/)
 
-**Server:** Pyhton
+**Server:** [Pyhton](https://www.python.org/), [pandas](https://pandas.pydata.org/), [sklearn](https://scikit-learn.org/), [googletrans](https://py-googletrans.readthedocs.io/)
 
 ## Installation
 
