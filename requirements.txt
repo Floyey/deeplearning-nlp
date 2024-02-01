@@ -1,0 +1,7 @@
+pandas==1.5.1
+plotly==5.13.1
+selenium==4.16.0
+SQLAlchemy==1.4.43
+sqlparse==0.4.3
+streamlit==1.29.0
+toml==0.10.2
