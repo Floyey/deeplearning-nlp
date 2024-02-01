@@ -11,7 +11,7 @@ A brief description of what this project does and who it's for
 
 ## Enoncé choisi
 
-> Projet Deep Learning, Computer Vision, votre application devra permettre d’uploader image ou vidéos pour appliquer des tâches de computer vision dessus (classification, détection d’objet, tracking, détection de mouvement, etc.…)
+> Projet Deep Learning, NLP, votre application devra contenir une page analytique et une page permettant d’utiliser le ou les modèles entraînés
 
 ## Technologies utilisé
 
@@ -37,5 +37,5 @@ Install packages with pip
 Start the server
 
 ```bash
-  streamlit run Dashboard.py
+  streamlit run app.py
 ```
