@@ -11,17 +11,17 @@
 
 ## Tech Stack
 
-**Client:** [Pyhton](https://www.python.org/), [Streamlit](https://streamlit.io/)
-
-**Server:** [Pyhton](https://www.python.org/), [pandas](https://pandas.pydata.org/), [sklearn](https://scikit-learn.org/), [googletrans](https://py-googletrans.readthedocs.io/)
+* [Pyhton](https://www.python.org/)
+* [googletrans](https://py-googletrans.readthedocs.io/)
+* [matplotlib](https://matplotlib.org/)
+* [pandas](https://pandas.pydata.org/)
+* [sklearn](https://scikit-learn.org/)
+* [seaborn](https://seaborn.pydata.org/)
+* [Streamlit](https://streamlit.io/)
 
 ## Installation
 
-Install packages with pip
-
-```bash
-  pip install -r requirements.txt
-```
+Run `main.ipynb`
 
 ## Run Locally
 
