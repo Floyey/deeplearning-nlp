@@ -1,16 +1,16 @@
 from googletrans import Translator
 import pickle
 
-def translate(sentence, language):
+def translate(sentence, orig_language, dest_language):
     translator = Translator()
-    translation = translator.translate(sentence, dest=language)
+    translation = translator.translate(sentence, src=orig_language, dest=dest_language)
     return translation.text
 
 def model_prediction(sentence_identification):
-    model_path = "./models/model.pickle"
-    vectorizer_path = "./models/vectorizer.pickle"
-    le_path = "./models/label.pickle"
-    vectorizer = pickle.load(open(vectorizer_path,'rb'))
-    model = pickle.load(open(model_path,'rb'))
-    le = pickle.load(open(le_path,'rb'))
-    return le.inverse_transform(model.predict(vectorizer.transform([sentence_identification])))[0]
+    # Récupération des pickle (model, vectoriseur & label)
+    model = pickle.load(open("./models/model.pickle", "rb"))
+    vectorizer = pickle.load(open("./models/vectorizer.pickle", "rb"))
+    le = pickle.load(open("./models/label.pickle",'rb'))
+
+    prediction = model.predict(vectorizer.transform([sentence_identification]))
+    return le.inverse_transform(prediction)[0]
